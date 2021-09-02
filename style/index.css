@@ -1,0 +1,23 @@
+.deep_blue {
+    background-color: rgb(31, 45, 58);
+}
+.light_blue {
+    background-color: rgb(46, 58, 69);
+}
+.color_gray {
+    color: rgb(100, 105, 109);
+}
+.color_white {
+    color: white;
+}
+
+article time {
+    font-size: 15px;
+}
+article address {
+    font-size: 20px;
+}
+
+header img {
+    height: 50px;
+}
