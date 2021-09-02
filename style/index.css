@@ -11,12 +11,13 @@
     color: white;
 }
 
-article time {
-    font-size: 15px;
-}
-article address {
+article h4 {
     font-size: 20px;
 }
+article time, article address {
+    font-size: 15px;
+}
+
 
 header img {
     height: 50px;
