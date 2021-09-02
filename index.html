@@ -27,7 +27,7 @@
                 </div>
             </nav>
             <div class="row justify-content-center gx-4 gy-3">
-                <article v-for="album in songList" class="col-2">
+                <article v-for="album in displayedAlbums" class="col-2">
                     <div class="light_blue text-center h-100 p-2">
                         <img :src="album.poster" alt="poster album" class="img-fluid my-3">
                         <h4 class="color_white mb-3">{{ album.title.toUpperCase() }}</h4>

@@ -8,25 +8,23 @@ var app = new Vue({
     methods: {
         printedAlbums() {
             if(this.checkedGenres == []) {
+                console.log(this.songList);
                 return this.songList
             } else {
-                let filtredArray = this.songList((album) => {
-                    checkedGenres.includes(album.genre);
+                let filtredArray = this.songList.filter((album) => {
+                    this.checkedGenres.includes(album.genre);
                 })
+                console.log(this.songList);
                 return filtredArray
             }
         }
     },
-    conputed: {
-        displayedAlbums: () => {
-            if(this.checkedGenres == []) {
-                return this.songList
-            } else {
-                let filtredArray = this.songList((album) => {
-                    checkedGenres.includes(album.genre);
-                })
-                return filtredArray
-            }
+    computed: {
+        displayedAlbums() {
+            if(this.checkedGenres.length == 0)
+                return this.songList;
+
+            return filteredAlbum = this.songList.filter((album) => this.checkedGenres.includes(album.genre));
         }
     },
     created() {
